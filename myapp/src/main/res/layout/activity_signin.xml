@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.myapplication.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_up"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:background="@drawable/logo"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sign"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_up"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:hint="请输入用户名"
+            android:textColorHint="#ffffff"
+            android:background="@drawable/edit_shape"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:hint="请输入密码"
+            android:textColorHint="#ffffff"
+            android:background="@drawable/edit_shape"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_margin="18dp"
+            android:text="注册"
+            android:onClick="signin"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:background="@drawable/edit_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>
